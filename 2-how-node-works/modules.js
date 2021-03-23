@@ -17,3 +17,8 @@ console.log(Calc.add(3, 5));
 const { add, multiply, divide } = require('./test-module-2');
 // console.log(calc2.add(4, 7));
 console.log(add(4, 7));
+
+// Caching
+require('./test-module-3')();
+require('./test-module-3')();
+require('./test-module-3')();
