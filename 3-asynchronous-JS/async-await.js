@@ -35,15 +35,37 @@ const getDocPic = async () => {
     console.log('Random dog image saved to file!');
   } catch (err) {
     console.log(err);
+
+    throw err;
   }
 
   return 'Three';
 };
 
+/*
 console.log('One');
 // const x = getDocPic();
 // console.log(x);
-getDocPic().then(x => {
-  console.log(x);
-});
+
+getDocPic()
+  .then(x => {
+    console.log(x);
+  })
+  .catch(err => {
+    // console.log(err);
+    console.log('Aw, snap! Error 💥');
+  });
+
 console.log('Two');
+*/
+
+(async () => {
+  try {
+    console.log('One');
+    const x = await getDocPic();
+    console.log(x);
+    console.log('Two');
+  } catch (err) {
+    console.log('Aw, snap! Error 💥');
+  }
+})();
