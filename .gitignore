@@ -1,2 +1,10 @@
+# some my files
 /_tmp
+
+# npm modules
 /1-node-farm/node_modules
+/3-asynchronous-JS/node_modules
+/4-natours/node_modules
+
+# OSX
+.DS_Store

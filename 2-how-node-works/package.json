@@ -1,0 +1,12 @@
+{
+  "name": "2-how-node-works",
+  "version": "1.0.0",
+  "description": "Learning Node.js",
+  "main": "streams.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Black",
+  "license": "ISC",
+  "type": "module"
+}
